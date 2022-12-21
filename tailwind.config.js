@@ -8,10 +8,13 @@ module.exports = {
     "./src/components/layout/Alert.jsx",
     "./src/pages/About.jsx",
     "./src/pages/Home.jsx",
+    "./src/pages/User.jsx",
     "./src/pages/NotFound.jsx",
     "./src/components/users/UserItem.jsx",
     "./src/components/users/UserResults.jsx",
     "./src/components/users/UserSearch.jsx",
+    "./src/components/repos/RepoItem.jsx",
+    "./src/components/repos/RepoList.jsx",
    
    
   ],

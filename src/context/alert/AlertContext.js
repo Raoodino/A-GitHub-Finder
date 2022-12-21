@@ -1,6 +1,8 @@
 import { createContext, useReducer } from "react";
 import alertReducer from './AlertReducer'
+import React from "react";
 
+// @ts-ignore
 const AlertContext = createContext()
 
 export const AlertProvider = ({ children }) =>{
@@ -15,10 +17,12 @@ export const AlertProvider = ({ children }) =>{
           type: 'SET_ALERT',
           payload: { msg, type },
         })
+        // @ts-ignore
         setTimeout(() => dispatch({ type: 'REMOVE_ALERT' }), 3000)
     }
     
-    return (<AlertContext.Provider value={{ alert: state, setAlert}}>
+    return (
+    <AlertContext.Provider value={{ alert: state, setAlert}}>
         {children}
         </AlertContext.Provider>
   )
